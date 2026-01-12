@@ -1,109 +1,114 @@
-# ==============================================================
-#                  TITANIC SURVIVAL PREDICTION
-#                  Machine Learning Project
-# --------------------------------------------------------------
-# Author : Shoaib Malik
-# Email  : shoaibdesignpoint13@gmail.com
-# ==============================================================
+ Titanic Survival Prediction using Linear Regression
+ ---------Project Overview------------
 
+This project predicts the survival outcome of Titanic passengers using Linear Regression, a fundamental machine learning algorithm. Although Linear Regression is primarily used for continuous values, it is applied here for educational purposes to understand regression-based prediction, feature relationships, and model evaluation in a real-world dataset.
 
-# ------------------ PROJECT OVERVIEW ------------------
-# This project focuses on predicting whether a passenger survived
-# the Titanic disaster using machine learning classification.
-# It is a beginner-friendly project designed to demonstrate the
-# complete ML pipeline from data loading to model evaluation.
+---------Dataset Description-----------
 
+Dataset Name: Titanic Dataset
 
-# ------------------ DATASET DESCRIPTION ------------------
-# Dataset Name : Titanic Dataset
-# Source       : Kaggle (public dataset)
-# Format       : Excel (.xls / .xlsx)
-# Download URL : https://hbiostat.org/data/repo/titanic3.xls
-#
-# Number of Rows    : Depends on dataset version
-# Number of Columns: Multiple passenger attributes including target
-#
-# The dataset contains demographic and travel-related information
-# about Titanic passengers.
+Source: Kaggle (Public Dataset)
 
+Download Link: https://hbiostat.org/data/repo/titanic3.xls
 
-# ------------------ DATA PREPROCESSING ------------------
-# The following preprocessing steps are applied:
-# - Handling missing values (Age, Embarked, Fare)
-# - Dropping irrelevant columns (Name, Ticket, Cabin if needed)
-# - Encoding categorical variables (Sex, Embarked)
-# - Feature scaling (optional)
-# - Splitting data into training and testing sets
+Format: Excel (.xls / .xlsx)
 
+Number of Rows / Columns: Depends on dataset version
 
-# ------------------ FEATURES ------------------
-# Input Features used for prediction:
-# - pclass   : Passenger class (1, 2, 3)
-# - sex      : Gender of passenger
-# - age      : Age of passenger
-# - sibsp    : Number of siblings/spouses onboard
-# - parch    : Number of parents/children onboard
-# - fare     : Ticket price
-# - embarked : Port of embarkation
-#
-# Target Variable:
-# - survived : 0 = Did not survive, 1 = Survived
+Features:
 
+Pclass (Passenger class)
 
-# ------------------ MODEL TRAINING ------------------
-# Machine Learning Algorithm Used:
-# - Logistic Regression
-#
-# Training Process:
-# - Dataset split into training and testing sets
-# - Model trained using training data
-# - Learned relationship between passenger features and survival
+Sex
 
+Age
 
-# ------------------ EVALUATION METRICS ------------------
-# Model performance is evaluated using:
-# - Confusion Matrix
-# - Accuracy Score
-# - Precision
-# - Recall
-# - F1-Score
-#
-# Confusion Matrix Structure:
-# Actual \ Predicted | Not Survived | Survived
-# -------------------|--------------|----------
-# Not Survived       | TN           | FP
-# Survived           | FN           | TP
+SibSp (Siblings/Spouses aboard)
 
+Parch (Parents/Children aboard)
 
-# ------------------ ACTUAL VS PREDICTED VALUES ------------------
-# The model’s predictions are compared with actual survival values
-# to analyze:
-# - Correct predictions
-# - Misclassifications
-# - Overall reliability of the model
+Fare
 
+Embarked (Port of embarkation)
 
-# ------------------ CONCLUSION ------------------
-# This project demonstrates how machine learning can be applied
-# to real-world classification problems.
-# Logistic Regression provides a simple yet effective baseline
-# model for survival prediction.
-# The project can be extended by using advanced algorithms like:
-# - Random Forest
-# - Support Vector Machines
-# - Gradient Boosting
+Target Variable: Survived (0 = Not Survived, 1 = Survived)
 
+Observation: Dataset includes numerical and categorical values requiring preprocessing before regression.
 
-# ------------------ TOOLS & LIBRARIES ------------------
-# - Python
-# - Pandas
-# - NumPy
-# - Scikit-learn
-# - Matplotlib / Seaborn
-# - Excel
+--------- Data Preprocessing----------
 
+Handled missing values in Age, Fare, and Embarked
 
-# ------------------ LICENSE ------------------
-# This project is created for educational purposes.
-# The dataset is publicly available and free to use.
-# ============================================================== 
+Removed irrelevant columns such as Name, Ticket, and Cabin
+
+Converted categorical features (Sex, Embarked) into numerical values
+
+Normalized numerical features for better regression performance
+
+Split dataset into training and testing sets
+
+---------Features and Target Definition----------
+
+Features (X):
+Pclass, Sex, Age, SibSp, Parch, Fare, Embarked
+
+Target (y):
+Survived
+
+---------Model Training---------
+
+Algorithm Used: Linear Regression
+
+Libraries:
+pandas, numpy, scikit-learn, matplotlib, seaborn
+
+The model is trained using training data and generates continuous output values representing survival probability.
+
+----------Evaluation Metrics----------
+
+Mean Absolute Error (MAE)
+
+Mean Squared Error (MSE)
+
+Root Mean Squared Error (RMSE)
+
+R² Score (Coefficient of Determination)
+
+These metrics are used to evaluate regression performance.
+
+--------- Actual vs Predicted----------
+
+An Actual vs Predicted scatter plot is generated to visually compare real survival outcomes with model predictions, helping to analyze prediction accuracy and error distribution.
+
+---------Pseudo Confusion Matrix----------
+
+Since Linear Regression produces continuous values, predictions are converted into binary classes using a threshold (e.g., 0.5) to create a pseudo confusion matrix for interpretability.
+
+-------- GitHub Repository---------
+
+Dataset file: titanic3.xls
+
+Jupyter Notebook / Python script for data preprocessing, training, and evaluation
+
+Clear and commented code for beginners
+
+-------Instructions to Run-------
+
+Download the Titanic dataset from the provided link.
+
+Load the dataset using Pandas.
+
+Perform data preprocessing and feature encoding.
+
+Train the Linear Regression model.
+
+Evaluate predictions using regression metrics and visualization.
+
+-------Conclusion---------
+
+This project demonstrates the application of Linear Regression to a classification-style problem for learning purposes. While Logistic Regression is more suitable for survival prediction, Linear Regression helps in understanding feature impact, prediction errors, and regression evaluation techniques.
+
+ -------Author--------
+
+Name: Shoaib Malik
+Email: shoaibdesignpoint13@gmail.com
