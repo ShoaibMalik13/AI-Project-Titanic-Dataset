@@ -1,114 +1,72 @@
-# Titanic Survival Prediction – Machine Learning Project
+# ==============================================================
+#                       TITANIC SURVIVAL PREDICTION
+#                   Machine Learning Project
+# Author: Shoaib Malik
+# Email: shoaibdesignpoint13@gmail.com
 
-## 📌 Project Overview
-This project uses the **Titanic dataset** to build a machine learning model that predicts whether a passenger survived the Titanic disaster or not.  
-The project demonstrates key ML concepts such as **data preprocessing, prediction vs actual values, confusion matrix, and model evaluation**.
 
-This dataset is widely used for beginners and academic AI projects.
+# ------------------  PROJECT OVERVIEW ------------------
+# This project predicts whether a Titanic passenger survived or not.
+# Beginner-friendly project to learn basic machine learning concepts:
+# - Data cleaning
+# - Feature selection
+# - Making predictions
+# - Checking accuracy with confusion matrix
 
----
+# ------------------  DATASET INFORMATION ------------------
+# Name: Titanic Dataset
+# Format: Excel (.xls / .xlsx)
+# Source: Public
+# Download Link: https://hbiostat.org/data/repo/titanic3.xls
 
-## 📂 Dataset Information
+# ------------------  DATASET COLUMNS ------------------
+# pclass    -> Passenger class (1st, 2nd, 3rd)
+# survived  -> Did the passenger survive? (0 = No, 1 = Yes)
+# name      -> Passenger name
+# sex       -> Male or Female
+# age       -> Age of passenger
+# sibsp     -> Number of siblings/spouses onboard
+# parch     -> Number of parents/children onboard
+# fare      -> Ticket price
+# embarked  -> Port where passenger boarded
 
-- **Dataset Name:** Titanic Dataset  
-- **File Format:** Excel (.xls / .xlsx)  
-- **Source:** Publicly available dataset  
-- **Download Link:**  
-  https://hbiostat.org/data/repo/titanic3.xls
+# ------------------  PROJECT GOALS ------------------
+# - Predict passenger survival
+# - Compare predicted vs actual results
+# - Build a confusion matrix
+# - Measure model accuracy
 
----
+# ------------------  ML CONCEPTS USED ------------------
+# - Data cleaning & preprocessing
+# - Feature selection
+# - Train/test split
+# - Classification (Logistic Regression)
+# - Predictions vs actual comparison
+# - Confusion matrix and accuracy score
 
-## 📊 Dataset Description
+# ------------------  MODEL EVALUATION ------------------
+# Confusion matrix example:
+# Actual \ Predicted | Not Survived | Survived
+# -------------------|-------------|----------
+# Not Survived       | TN          | FP
+# Survived           | FN          | TP
+# Accuracy, precision, recall, F1-score can also be used
 
-The dataset contains information about Titanic passengers, including:
+# ------------------  TOOLS & LIBRARIES ------------------
+# - Python
+# - Pandas & NumPy
+# - Scikit-learn
+# - Matplotlib / Seaborn
+# - Excel
 
-| Column Name | Description |
-|------------|------------|
-| pclass | Passenger class (1st, 2nd, 3rd) |
-| survived | Survival status (0 = No, 1 = Yes) |
-| name | Passenger name |
-| sex | Gender |
-| age | Age of passenger |
-| sibsp | Number of siblings/spouses aboard |
-| parch | Number of parents/children aboard |
-| fare | Ticket fare |
-| embarked | Port of embarkation |
+# ------------------  HOW TO RUN ------------------
+# 1. Download the Titanic dataset
+# 2. Load it using Pandas
+# 3. Clean and preprocess the data
+# 4. Train a classification model
+# 5. Predict survival outcomes
+# 6. Check results with confusion matrix and accuracy
 
----
-
-## 🎯 Project Objectives
-
-- Predict passenger survival using machine learning
-- Compare **actual vs predicted values**
-- Generate and analyze the **confusion matrix**
-- Evaluate model accuracy and performance
-- Understand real-world classification problems
-
----
-
-## 🧠 Machine Learning Concepts Used
-
-- Data Cleaning & Preprocessing
-- Feature Selection
-- Train/Test Split
-- Classification Model (e.g., Logistic Regression)
-- Prediction vs Actual Comparison
-- Confusion Matrix
-- Accuracy Score
-
----
-
-## 📈 Model Evaluation
-
-The model performance is evaluated using:
-- **Confusion Matrix**
-- **Accuracy**
-- **Precision & Recall** (optional)
-- **F1-Score** (optional)
-
-Example confusion matrix:
-
-| Actual \ Predicted | Not Survived | Survived |
-|-------------------|-------------|----------|
-| Not Survived | TN | FP |
-| Survived | FN | TP |
-
----
-
-## 🛠 Tools & Technologies
-
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib / Seaborn
-- Excel (for dataset)
-
----
-
-## 🚀 How to Run the Project
-
-1. Download the Titanic dataset in Excel format  
-2. Load the dataset using Pandas  
-3. Preprocess the data (handle missing values, encoding, etc.)  
-4. Train the classification model  
-5. Predict survival outcomes  
-6. Evaluate results using confusion matrix and accuracy  
-
----
-
-## 👤 Author
-
-**Shoaib Malik**  
-📧 Email: shoaibdesignpoint13@gmail.com  
-
----
-
-## 📜 License
-
-This project is for **educational and academic purposes only**.  
-The dataset is publicly available and free to use.
-
----
-
-⭐ If you find this project helpful, feel free to star the repository!
+# ------------------  LICENSE ------------------
+# This project is for educational purposes only.
+# Dataset is publicly available and free to use
