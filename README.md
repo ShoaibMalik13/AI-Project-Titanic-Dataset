@@ -16,7 +16,7 @@
 # ------------------  DATASET INFORMATION ------------------
 # Name: Titanic Dataset
 # Format: Excel (.xls / .xlsx)
-# Source: Public
+# Source: Kaggle
 # Download Link: https://hbiostat.org/data/repo/titanic3.xls
 
 # ------------------  DATASET COLUMNS ------------------
