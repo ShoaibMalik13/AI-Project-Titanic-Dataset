@@ -1,4 +1,5 @@
  Titanic Survival Prediction using Linear Regression
+ 
  ---------Project Overview------------
 
 This project predicts the survival outcome of Titanic passengers using Linear Regression, a fundamental machine learning algorithm. Although Linear Regression is primarily used for continuous values, it is applied here for educational purposes to understand regression-based prediction, feature relationships, and model evaluation in a real-world dataset.
